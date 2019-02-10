@@ -75,10 +75,13 @@ class BlogsController extends Controller
     {
         $this->blog->create($request->except('_token'));
 
+        $topic = 'test';
+
         fcm()
-            ->data([
-                'title' => 'Test FCM',
-                'body' => 'This is a test of FCM',
+            ->toTopic("test") // $topic must an string (topic name)
+            ->notification([
+                'title' => 'New post has been added',
+                'body' => 'Check it or wait for it to be published.',
             ])
             ->send();
         return new RedirectResponse(route('admin.blogs.index'), ['flash_success' => trans('alerts.backend.blogs.created')]);
