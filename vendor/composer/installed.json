@@ -1816,6 +1816,55 @@
         ]
     },
     {
+        "name": "kawankoding/laravel-fcm",
+        "version": "0.1.2",
+        "version_normalized": "0.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kawankoding/laravel-fcm.git",
+            "reference": "01eda5ee71bc8e98bdc451470653e9715d8118e7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kawankoding/laravel-fcm/zipball/01eda5ee71bc8e98bdc451470653e9715d8118e7",
+            "reference": "01eda5ee71bc8e98bdc451470653e9715d8118e7",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/support": "~5.1.0|~5.2.0|~5.3.0|~5.4.0|~5.5.0|~5.6.0|~5.7.0",
+            "php": "^5.6|^7.0"
+        },
+        "time": "2018-09-07T15:43:40+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Kawankoding\\Fcm\\FcmServiceProvider"
+                ],
+                "aliases": {
+                    "Fcm": "Kawankoding\\Fcm\\FcmFacade"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Kawankoding\\Fcm\\": "src/"
+            },
+            "files": [
+                "src/helpers.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Muhammad Amirul Ihsan",
+                "email": "muh.amirul.ihsan@gmail.com"
+            }
+        ],
+        "description": "A package to send Firebase notification cross Laravel Application"
+    },
+    {
         "name": "laravel/browser-kit-testing",
         "version": "v4.0.2",
         "version_normalized": "4.0.2.0",

@@ -201,6 +201,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
         Bvipul\Generator\Provider\CrudGeneratorServiceProvider::class,
+        Kawankoding\Fcm\FcmServiceProvider::class,
     ],
 
     /*
@@ -261,6 +262,7 @@ return [
         'Html'        => Collective\Html\HtmlFacade::class,
         'Socialite'   => Laravel\Socialite\Facades\Socialite::class,
         'JWTAuth'     => Tymon\JWTAuth\Facades\JWTAuth::class,
+        'Fcm' => Kawankoding\Fcm\FcmFacade::class,
         //'Datatables' => Yajra\DataTables\Facades\DataTables::class
 
     ],

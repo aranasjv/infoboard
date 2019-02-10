@@ -28,6 +28,7 @@ class ComposerStaticInitb55bbad6fbbb1f746fe0e9f2ce009266
         '24be6d98d7c305f36699ba4e34b6df3c' => __DIR__ . '/..' . '/arcanedev/log-viewer/helpers.php',
         '4a1f389d6ce373bda9e57857d3b61c84' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/helpers.php',
         'c9b7496aa2e287ba00ff44d2d2a861b1' => __DIR__ . '/..' . '/hieu-le/active/src/helpers.php',
+        'e82eb7f657451ddca8d351a3ae8f2eb8' => __DIR__ . '/..' . '/kawankoding/laravel-fcm/src/helpers.php',
         'f18cc91337d49233e5754e93f3ed9ec3' => __DIR__ . '/..' . '/laravelcollective/html/src/helpers.php',
         '0b47d6d4a00ca9112ba3953b49e7c9a4' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/helper.php',
         '797a8938bf9e0b8e2f68f48174e35e1f' => __DIR__ . '/../..' . '/app/Helpers/helpers.php',
@@ -118,6 +119,10 @@ class ComposerStaticInitb55bbad6fbbb1f746fe0e9f2ce009266
             'Laravel\\Tinker\\' => 15,
             'Laravel\\Socialite\\' => 18,
             'Laravel\\BrowserKitTesting\\' => 26,
+        ),
+        'K' => 
+        array (
+            'Kawankoding\\Fcm\\' => 16,
         ),
         'J' => 
         array (
@@ -363,6 +368,10 @@ class ComposerStaticInitb55bbad6fbbb1f746fe0e9f2ce009266
         'Laravel\\BrowserKitTesting\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/browser-kit-testing/src',
+        ),
+        'Kawankoding\\Fcm\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kawankoding/laravel-fcm/src',
         ),
         'JakubOnderka\\PhpConsoleColor\\' => 
         array (
@@ -2989,6 +2998,9 @@ class ComposerStaticInitb55bbad6fbbb1f746fe0e9f2ce009266
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/JakubOnderka/PhpConsoleHighlighter/Highlighter.php',
         'JsonSerializable' => __DIR__ . '/..' . '/nesbot/carbon/src/JsonSerializable.php',
+        'Kawankoding\\Fcm\\Fcm' => __DIR__ . '/..' . '/kawankoding/laravel-fcm/src/Fcm.php',
+        'Kawankoding\\Fcm\\FcmFacade' => __DIR__ . '/..' . '/kawankoding/laravel-fcm/src/FcmFacade.php',
+        'Kawankoding\\Fcm\\FcmServiceProvider' => __DIR__ . '/..' . '/kawankoding/laravel-fcm/src/FcmServiceProvider.php',
         'Laravel\\BrowserKitTesting\\Concerns\\ImpersonatesUsers' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Concerns/ImpersonatesUsers.php',
         'Laravel\\BrowserKitTesting\\Concerns\\InteractsWithAuthentication' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Concerns/InteractsWithAuthentication.php',
         'Laravel\\BrowserKitTesting\\Concerns\\InteractsWithConsole' => __DIR__ . '/..' . '/laravel/browser-kit-testing/src/Concerns/InteractsWithConsole.php',

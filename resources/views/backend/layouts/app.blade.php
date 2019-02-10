@@ -73,6 +73,20 @@
             @include('backend.includes.footer')
         </div><!-- ./wrapper -->
 
+
+        <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyAkhpXFagZhMJW-v9uBUGad66wVstHrbB8",
+                authDomain: "multimediaboard.firebaseapp.com",
+                databaseURL: "https://multimediaboard.firebaseio.com",
+                projectId: "multimediaboard",
+                storageBucket: "multimediaboard.appspot.com",
+                messagingSenderId: "902593669115"
+            };
+            firebase.initializeApp(config);
+        </script>
         <!-- JavaScripts -->
         @yield('before-scripts')
         {{ Html::script(mix('js/backend.js')) }}
