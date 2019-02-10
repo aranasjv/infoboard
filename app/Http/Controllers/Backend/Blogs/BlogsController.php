@@ -63,14 +63,6 @@ class BlogsController extends Controller
         $blogTags = BlogTag::getSelectData();
         $blogCategories = BlogCategory::getSelectData();
 
-        fcm()
-            ->to($recipients) // $recipients must an array
-            ->data([
-                'title' => 'Test FCM',
-                'body' => 'This is a test of FCM',
-            ])
-            ->send();
-
         return new CreateResponse($this->status, $blogCategories, $blogTags);
     }
 
@@ -83,6 +75,12 @@ class BlogsController extends Controller
     {
         $this->blog->create($request->except('_token'));
 
+        fcm()
+            ->data([
+                'title' => 'Test FCM',
+                'body' => 'This is a test of FCM',
+            ])
+            ->send();
         return new RedirectResponse(route('admin.blogs.index'), ['flash_success' => trans('alerts.backend.blogs.created')]);
     }
 
