@@ -202,6 +202,7 @@ return [
         Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
         Bvipul\Generator\Provider\CrudGeneratorServiceProvider::class,
         Kawankoding\Fcm\FcmServiceProvider::class,
+        MaddHatter\LaravelFullcalendar\ServiceProvider::class,
     ],
 
     /*
@@ -263,6 +264,7 @@ return [
         'Socialite'   => Laravel\Socialite\Facades\Socialite::class,
         'JWTAuth'     => Tymon\JWTAuth\Facades\JWTAuth::class,
         'Fcm' => Kawankoding\Fcm\FcmFacade::class,
+        'Calendar' => MaddHatter\LaravelFullcalendar\Facades\Calendar::class,
         //'Datatables' => Yajra\DataTables\Facades\DataTables::class
 
     ],

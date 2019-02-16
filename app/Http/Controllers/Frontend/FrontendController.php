@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\Frontend;
 use App\Models\Blogs\Blog;
+use App\Models\Event\Event;
 use App\Http\Controllers\Controller;
 use App\Models\Settings\Setting;
 use App\Repositories\Frontend\Pages\PagesRepository;
+use Calendar;
 
 /**
  * Class FrontendController.
@@ -19,7 +21,26 @@ class FrontendController extends Controller
 
         $blogs=Blog::all();
 
-        return view('frontend.index', compact('blogs'));
+        $events = [];
+        $data = Event::all();
+        if($data->count()) {
+            foreach ($data as $key => $value) {
+                $events[] = Calendar::event(
+                    $value->title,
+                    true,
+                    new \DateTime($value->start_date),
+                    new \DateTime($value->end_date.' +1 day'),
+                    null,
+                    // Add color and link on event
+                    [
+                        'color' => '#f05050',
+                    ]
+                );
+            }
+        }
+        $calendar = Calendar::addEvents($events);
+
+        return view('frontend.index', compact('blogs','calendar'));
     }
 
 
