@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Frontend;
 use App\Models\Blogs\Blog;
+use App\Models\Announcement\Announcement;
 use App\Models\Event\Event;
 use App\Http\Controllers\Controller;
 use App\Models\Settings\Setting;
@@ -20,7 +21,7 @@ class FrontendController extends Controller
     {
 
         $blogs=Blog::all();
-
+        $announcements=Announcement::all();
         $events = [];
         $data = Event::all();
         if($data->count()) {
@@ -40,7 +41,7 @@ class FrontendController extends Controller
         }
         $calendar = Calendar::addEvents($events);
 
-        return view('frontend.index', compact('blogs','calendar'));
+        return view('frontend.index', compact('blogs','calendar','announcements'));
     }
 
 
