@@ -2,59 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea607c84-ca83-4ef7-bf5c-f13496486fbd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/maddhatter/laravel-fullcalendar/tests/.gitkeep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Breadcrumbs/Backend/Event.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/Event/EventsController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/Event/EventsTableController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/Backend/Event/CreateEventRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/Backend/Event/DeleteEventRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/Backend/Event/EditEventRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/Backend/Event/ManageEventRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/Backend/Event/StoreEventRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/Backend/Event/UpdateEventRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Responses/Backend/Event/CreateResponse.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Responses/Backend/Event/EditResponse.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Models/Event/Event.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Models/Event/Traits/EventAttribute.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Models/Event/Traits/EventRelationship.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Repositories/Backend/Event/EventRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2019_02_15_114120_create_events_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/backend/events/create.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/backend/events/edit.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/backend/events/form.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/backend/events/index.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/backend/events/partials/events-header-buttons.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/Generator/Event.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/maddhatter/laravel-fullcalendar/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/maddhatter/laravel-fullcalendar/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/maddhatter/laravel-fullcalendar/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/maddhatter/laravel-fullcalendar/phpunit.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/maddhatter/laravel-fullcalendar/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/maddhatter/laravel-fullcalendar/src/MaddHatter/LaravelFullcalendar/Calendar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/maddhatter/laravel-fullcalendar/src/MaddHatter/LaravelFullcalendar/Event.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/maddhatter/laravel-fullcalendar/src/MaddHatter/LaravelFullcalendar/EventCollection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/maddhatter/laravel-fullcalendar/src/MaddHatter/LaravelFullcalendar/Facades/Calendar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/maddhatter/laravel-fullcalendar/src/MaddHatter/LaravelFullcalendar/IdentifiableEvent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/maddhatter/laravel-fullcalendar/src/MaddHatter/LaravelFullcalendar/ServiceProvider.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/maddhatter/laravel-fullcalendar/src/MaddHatter/LaravelFullcalendar/SimpleEvent.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/maddhatter/laravel-fullcalendar/src/views/script.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Breadcrumbs/Backend/Backend.php" afterPath="$PROJECT_DIR$/app/Http/Breadcrumbs/Backend/Backend.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/FrontendController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/FrontendController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/module.php" afterPath="$PROJECT_DIR$/config/module.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/en/alerts.php" afterPath="$PROJECT_DIR$/resources/lang/en/alerts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/en/exceptions.php" afterPath="$PROJECT_DIR$/resources/lang/en/exceptions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/en/labels.php" afterPath="$PROJECT_DIR$/resources/lang/en/labels.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/en/menus.php" afterPath="$PROJECT_DIR$/resources/lang/en/menus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -420,12 +368,12 @@
       <workItem from="1549668805542" duration="1068000" />
       <workItem from="1549786229948" duration="5092000" />
       <workItem from="1549800707677" duration="2775000" />
-      <workItem from="1550230630857" duration="11771000" />
+      <workItem from="1550230630857" duration="11868000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60963000" />
+    <option name="totallyTimeSpent" value="61060000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
