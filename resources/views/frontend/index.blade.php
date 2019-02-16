@@ -1,13 +1,14 @@
 @extends('frontend.layouts.app')
 
+
 @section('content')
     <!---Welcome---->
     <div class="container">
     <div class="col">
 
         <div class="panel panel-default">
-            <div class="panel-heading" style="background-color: #63D8ED">
-                <i class="fa fa-home"></i> {{ trans('navs.general.home') }}
+            <div class="panel-heading" style="background-color: #344F79">
+                <i class="fa fa-home"></i> <span style="color:#F1EDC4 " >{{ trans('navs.general.home') }}</span>
             </div>
 
             <div class="panel-body">
@@ -21,14 +22,29 @@
     <div class="container">
     <div class="col">
         <div class="panel panel-default">
-            <div class="panel-heading" style="background-color: #63D8ED"><i class="glyphicon glyphicon glyphicon-cloud"></i> Announcement</div>
+            <div class="panel-heading" style="background-color: #344F79"><i class="fa fa-bullhorn"></i><span style="color:#F1EDC4 " >Announcement</span> </div>
 
             <div class="panel-body">
                @foreach($announcements as $announcement)
-                    <center><b>{{$announcement->title}}</b></center>
+                    <span style="color:#2A5D8F" > <center><b>{{$announcement->title}}</b></center></span>
                     {{$announcement->content}}
                     <hr>
                 @endforeach
+            </div>
+        </div><!-- panel -->
+    </div>
+    </div>
+
+    <div class="container">
+    <div class="col">
+        <div class="panel panel-default">
+            <div class="panel-heading" style="background-color: #344F79"><i class="fa fa-calendar"></i><span style="color:#F1EDC4 " > Event Calendars</span> </div>
+
+            <div class="panel-body">
+                <div class="panel-body">
+                    {!! $calendar->calendar() !!}
+                    {!! $calendar->script() !!}
+                </div>
             </div>
         </div><!-- panel -->
     </div>
@@ -40,14 +56,14 @@
                 <div class="col-xs-12">
 
                     <div class="panel panel-default">
-                        <div class="panel-heading" style="background-color: #63D8ED"><i class="glyphicon glyphicon glyphicon-envelope"></i> Information Posts </div>
+                        <div class="panel-heading" style="background-color: #344F79"><i class="fa-info-circle"></i><span style="color:#F1EDC4 " > Information Posts</span> </div>
 
                         <div class="panel-body">
 
                             @foreach($blogs as $blog)
                                 @if($blog->status == 'Published')
                                     <div class="panel panel-default">
-                                        <div class="panel-heading" style="background-color: #AACCCA">{{$blog->name}}
+                                        <div class="panel-heading" style="background-color: #5FA79B">{{$blog->name}}
 
                                         </div>
                                         <div class="panel-body">
@@ -73,7 +89,7 @@
                                     ?>
                                     @if($publish_date->isPast())
                                             <div class="panel panel-default">
-                                                <div class="panel-heading" style="background-color: #AACCCA">{{$blog->name}}
+                                                <div class="panel-heading" style="background-color: #5FA79B">{{$blog->name}}
 
                                                 </div>
                                                 <div class="panel-body">
@@ -103,21 +119,7 @@
                 </div>
             </div><!-- panel -->
             </div>
-            <div class="col">
-                <div class="panel panel-default">
-                    <div class="panel-heading" style="background-color: #63D8ED"><i class="glyphicon glyphicon glyphicon-cloud"></i> Announcement and Event Calendars </div>
 
-                    <div class="panel-body">
-                        <i class="fa fa-home"></i>
-                        <div class="panel-body">
-                            {!! $calendar->calendar() !!}
-                            {!! $calendar->script() !!}
-                        </div>
-                    </div>
-                </div><!-- panel -->
-            </div>
-        </div>
-   </div>
 
 @endsection
 

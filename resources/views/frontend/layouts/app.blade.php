@@ -4,12 +4,19 @@
         <!DOCTYPE html>
         <html lang="{{ config('app.locale') }}">
         <head>
+
+            <link href={{ asset('css/fullcalendar.min.css')}} rel='stylesheet' />
+            <link href={{ asset('css/fullcalendar.print.min.css')}} rel='stylesheet' media='print' />
+            <script src={{asset('js/lib/moment.min.js')}}></script>
+            <script src={{asset('js/lib/jquery.min.js')}}></script>
+            <script src={{asset('js/fullcalendar.min.js')}}></script>
+            <script src='../fullcalendar.min.js'></script>
+
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <meta name="csrf-token" content="{{ csrf_token() }}">
             <title>@yield('title', app_name())</title>
-
             <!-- Meta -->
             <meta name="description" content="@yield('meta_description', 'MultiMediaBoard')">
             <meta name="author" content="@yield('meta_author', 'Aranas Jv')">
@@ -34,11 +41,6 @@
                 'csrfToken' => csrf_token(),
             ]); ?>
         </script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.js"></script>
-            <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.css"/>
         <?php
             if(!empty($google_analytics)){
                 echo $google_analytics;
@@ -57,8 +59,7 @@
         </div><!--#app-->
 
         <!-- Scripts -->
-        @yield('before-scripts')
-        {!! Html::script(mix('js/frontend.js')) !!}
+
         @yield('after-scripts')
         {{ Html::script('js/jquerysession.js') }}
         {{ Html::script('js/frontend/frontend.js') }}

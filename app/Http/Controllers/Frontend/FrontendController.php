@@ -20,8 +20,8 @@ class FrontendController extends Controller
     public function index()
     {
 
-        $blogs=Blog::all();
-        $announcements=Announcement::all();
+        $blogs=Blog::all()->sortByDesc("id");;
+        $announcements=Announcement::all()->sortByDesc("id");;
         $events = [];
         $data = Event::all();
         if($data->count()) {
@@ -34,12 +34,19 @@ class FrontendController extends Controller
                     null,
                     // Add color and link on event
                     [
-                        'color' => '#f05050',
+                        'color' => '#192934',
                     ]
                 );
             }
         }
-        $calendar = Calendar::addEvents($events);
+        $calendar = Calendar::addEvents($events)
+        ->setOptions([ //set fullcalendar options
+        'header' => [
+            'left' => 'title',
+            'center' =>'',
+            'right' => 'today prev,next'],
+    ]
+        );
 
         return view('frontend.index', compact('blogs','calendar','announcements'));
     }
