@@ -23,4 +23,7 @@ return [
 	"events" => [
 	"table" => "events",
 	],
+	"announcements" => [
+	"table" => "announcements",
+	],
 ];

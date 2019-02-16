@@ -10,8 +10,9 @@
 
     <div class="form-group">
         {{ Form::label('name', trans('Content'), ['class' => 'col-lg-2 control-label required']) }}
-
+        <div class="col-lg-10">
         {{ Form::textarea('content', null, ['class' => 'form-control', 'placeholder' => trans('Content'), 'required' => 'required']) }}
+        </div><!--col-lg-10-->
     </div><!--col-lg-10-->
 </div><!--form control-->
 

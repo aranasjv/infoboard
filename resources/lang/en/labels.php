@@ -246,6 +246,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"announcements" => [
+	"create" => "Create Announcement",
+	"edit" => "Edit Announcement",
+	"management" => "Announcement Management",
+	"title" => "Announcements",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [

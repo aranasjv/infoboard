@@ -85,6 +85,13 @@ return [
 	"not_found" => "That Event does not exist.",
 	"update_error" => "There was a problem updating this Event. Please try again.",
 	],
+	"announcements" => [
+	"already_exists" => "That Announcement already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this Announcement. Please try again.",
+	"delete_error" => "There was a problem deleting this Announcement. Please try again.",
+	"not_found" => "That Announcement does not exist.",
+	"update_error" => "There was a problem updating this Announcement. Please try again.",
+	],
 	],
 	"frontend" => [
 	"auth" => [

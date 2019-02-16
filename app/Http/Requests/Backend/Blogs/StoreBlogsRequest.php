@@ -27,7 +27,7 @@ class StoreBlogsRequest extends Request
     public function rules()
     {
         return [
-            'name'              => 'required|max:191',
+            'name'              => 'required|max:191|unique:blogs,name,'.$this->segment(3),
             'featured_image'    => 'required',
             'publish_datetime'  => 'required|date',
             'content'           => 'required',
@@ -45,6 +45,7 @@ class StoreBlogsRequest extends Request
     {
         return [
             'name.required' => 'Please insert Blog Title',
+            'name.unique'   => 'Blog title already exists, please enter a different title.',
             'name.max'      => 'Blog Title may not be greater than 191 characters.',
         ];
     }

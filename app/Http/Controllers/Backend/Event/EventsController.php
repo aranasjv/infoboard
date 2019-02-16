@@ -75,7 +75,7 @@ class EventsController extends Controller
             ->toTopic("test") // $topic must an string (topic name)
             ->notification([
                 'title' => 'Check it',
-                'body' => 'New event has been calendar!!',
+                'body' => 'New event has been added on calendar!!',
             ])
             ->send();
         //Create the model using repository create method

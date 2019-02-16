@@ -59,5 +59,10 @@ return [
 	"deleted" => "The Event was successfully deleted.",
 	"updated" => "The Event was successfully updated.",
 	],
+	"announcements" => [
+	"created" => "The Announcement was successfully created.",
+	"deleted" => "The Announcement was successfully deleted.",
+	"updated" => "The Announcement was successfully updated.",
+	],
 	],
 ];

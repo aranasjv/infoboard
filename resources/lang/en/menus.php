@@ -107,6 +107,13 @@ return [
 	"management" => "Event Management",
 	"main" => "Events",
 	],
+	"announcements" => [
+	"all" => "All Announcements",
+	"create" => "Create Announcement",
+	"edit" => "Edit Announcement",
+	"management" => "Announcement Management",
+	"main" => "Announcements",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",
