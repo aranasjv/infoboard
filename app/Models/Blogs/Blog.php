@@ -28,6 +28,7 @@ class Blog extends BaseModel
         'meta_description',
         'status',
         'featured_image',
+        'featured_video',
         'created_by',
     ];
 

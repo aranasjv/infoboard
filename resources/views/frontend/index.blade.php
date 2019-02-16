@@ -8,7 +8,7 @@
 
         <div class="panel panel-default">
             <div class="panel-heading" style="background-color: #344F79">
-                <i class="fa fa-home"></i> <span style="color:#F1EDC4 " >{{ trans('navs.general.home') }}</span>
+                <i class="fa fa-home" style="color:#F1EDC4"></i> <span style="color:#F1EDC4 " >{{ trans('navs.general.home') }}</span>
             </div>
 
             <div class="panel-body">
@@ -22,7 +22,7 @@
     <div class="container">
     <div class="col">
         <div class="panel panel-default">
-            <div class="panel-heading" style="background-color: #344F79"><i class="fa fa-bullhorn"></i><span style="color:#F1EDC4 " >Announcement</span> </div>
+            <div class="panel-heading" style="background-color: #344F79"><i class="fa fa-bullhorn" style="color:#F1EDC4"></i><span style="color:#F1EDC4 " >Announcement</span> </div>
 
             <div class="panel-body">
                @foreach($announcements as $announcement)
@@ -38,7 +38,7 @@
     <div class="container">
     <div class="col">
         <div class="panel panel-default">
-            <div class="panel-heading" style="background-color: #344F79"><i class="fa fa-calendar"></i><span style="color:#F1EDC4 " > Event Calendars</span> </div>
+            <div class="panel-heading" style="background-color: #344F79"><i class="fa fa-calendar" style="color:#F1EDC4"></i><span style="color:#F1EDC4 " > Event Calendars</span> </div>
 
             <div class="panel-body">
                 <div class="panel-body">
@@ -56,14 +56,14 @@
                 <div class="col-xs-12">
 
                     <div class="panel panel-default">
-                        <div class="panel-heading" style="background-color: #344F79"><i class="fa-info-circle"></i><span style="color:#F1EDC4 " > Information Posts</span> </div>
+                        <div class="panel-heading" style="background-color: #344F79"><i class="fa fa-info-circle" style="color:#F1EDC4"></i><span style="color:#F1EDC4 " > Information Posts</span> </div>
 
                         <div class="panel-body">
 
                             @foreach($blogs as $blog)
                                 @if($blog->status == 'Published')
                                     <div class="panel panel-default">
-                                        <div class="panel-heading" style="background-color: #5FA79B">{{$blog->name}}
+                                        <div class="panel-heading" style="background-color: #344F79"><span style="color:#F1EDC4 " >{{$blog->name}}</span>
 
                                         </div>
                                         <div class="panel-body">
@@ -71,8 +71,8 @@
                                             <p class="card-text">{!! $blog->content !!}</p>
                                             <a href="post/{{$blog->slug}}" class="btn btn-primary">Read More &rarr;</a>
                                         </div>
-                                        <div class="panel-footer text-muted">
-                                            Published on {{$blog->publish_datetime}} by {{$blog->owner->name}}
+                                        <div class="panel-footer text-muted" style="background-color: #344F79">
+                                            <span style="color:#F1EDC4 " > Published on {{$blog->publish_datetime}} by {{$blog->owner->name}}</span>
                                             <div>
                                             @foreach($blog->categories as $category)
                                                 <span class="badge pull-xs-right">{{$category->name}}</span>
@@ -89,7 +89,7 @@
                                     ?>
                                     @if($publish_date->isPast())
                                             <div class="panel panel-default">
-                                                <div class="panel-heading" style="background-color: #5FA79B">{{$blog->name}}
+                                                <div class="panel-heading" style="background-color: #344F79"></i><span style="color:#F1EDC4 " >{{$blog->name}}</span>
 
                                                 </div>
                                                 <div class="panel-body">
@@ -97,8 +97,8 @@
                                                     <p class="card-text">{!! $blog->content !!}</p>
                                                     <a href="post/{{$blog->slug}}" class="btn btn-primary">Read More &rarr;</a>
                                                 </div>
-                                                <div class="panel-footer text-muted">
-                                                    Published on {{$blog->publish_datetime}} by {{$blog->owner->name}}
+                                                <div class="panel-footer text-muted" style="background-color: #344F79">
+                                                    <span style="color:#F1EDC4 " > Published on {{$blog->publish_datetime}} by {{$blog->owner->name}}</span>
                                                     <div>
                                                         @foreach($blog->categories as $category)
                                                             <span class="badge pull-xs-right">{{$category->name}}</span>

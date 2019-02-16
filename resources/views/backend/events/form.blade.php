@@ -21,9 +21,9 @@
 
     <div class="col-lg-10">
         @if(!empty($events->start_date))
-            {{ Form::date('start_date', \Carbon\Carbon::parse($events->event_date)->format('m/d/Y'), ['class' => 'form-control datetimepicker1 box-size', 'placeholder' => trans('validation.attributes.backend.blogs.publish'), 'required' => 'required', 'id' => 'datetimepicker1']) }}
+            {{ Form::date('start_date', \Carbon\Carbon::parse($events->start_date)->format('m/d/Y'), ['class' => 'form-control datetimepicker1 box-size', 'placeholder' => trans('validation.attributes.backend.event.publish'), 'required' => 'required', 'id' => 'datetimepicker1']) }}
         @else
-            {{ Form::date('start_date', null, ['class' => 'form-control datetimepicker1 box-size', 'placeholder' => trans('validation.attributes.backend.blogs.publish'), 'required' => 'required', 'id' => 'datetimepicker1']) }}
+            {{ Form::date('start_date', null, ['class' => 'form-control datetimepicker1 box-size', 'placeholder' => trans('validation.attributes.backend.event.publish'), 'required' => 'required', 'id' => 'datetimepicker1']) }}
         @endif
     </div><!--col-lg-10-->
 </div><!--form control-->
@@ -33,9 +33,9 @@
 
     <div class="col-lg-10">
         @if(!empty($events->end_date))
-            {{ Form::date('end_date', \Carbon\Carbon::parse($events->event_date)->format('m/d/Y'), ['class' => 'form-control datetimepicker1 box-size', 'placeholder' => trans('validation.attributes.backend.blogs.publish'), 'required' => 'required', 'id' => 'datetimepicker1']) }}
+            {{ Form::date('end_date', \Carbon\Carbon::parse($events->end_date)->format('m/d/Y'), ['class' => 'form-control datetimepicker1 box-size', 'placeholder' => trans('validation.attributes.backend.event.publish'), 'required' => 'required', 'id' => 'datetimepicker1']) }}
         @else
-            {{ Form::date('end_date', null, ['class' => 'form-control datetimepicker1 box-size', 'placeholder' => trans('validation.attributes.backend.blogs.publish'), 'required' => 'required', 'id' => 'datetimepicker1']) }}
+            {{ Form::date('end_date', null, ['class' => 'form-control datetimepicker1 box-size', 'placeholder' => trans('validation.attributes.backend.event.publish'), 'required' => 'required', 'id' => 'datetimepicker1']) }}
         @endif
     </div><!--col-lg-10-->
 </div><!--form control-->
