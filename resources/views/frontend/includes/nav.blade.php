@@ -1,5 +1,5 @@
 <nav class="navbar navbar light" style="background-color: #192934">
-    <div class="container">
+
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#frontend-navbar-collapse">
                 <span class="sr-only">{{ trans('labels.general.toggle_navigation') }}</span>
@@ -12,5 +12,4 @@
            {{--  @endif --}}
         </div><!--navbar-header-->
 
-    </div><!--container-->
 </nav>
