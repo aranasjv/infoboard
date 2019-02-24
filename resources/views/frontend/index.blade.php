@@ -51,8 +51,8 @@
 
 
     <div class="row">
-        <div class="col-xs-2"></div>
-        <div class="col-xs-8"> <!-- Video Post -->
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8"> <!-- Video Post -->
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col">
@@ -89,7 +89,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-2"></div>
+        <div class="col-sm-2"></div>
     </div>
 
 
@@ -97,7 +97,7 @@
 
 
     <div class="row" >
-        <div class="col-xs-6">
+        <div class="col-sm-6">
             <!-- Calendar -->
             <div class="container-fluid">
                 <div class="col">
@@ -114,7 +114,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-6">
+        <div class="col-sm-6">
             <!-- Image Post -->
             <div class="container-fluid">
                 <div class="row mb-2">
