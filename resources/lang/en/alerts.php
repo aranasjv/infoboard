@@ -64,5 +64,10 @@ return [
 	"deleted" => "The Announcement was successfully deleted.",
 	"updated" => "The Announcement was successfully updated.",
 	],
+	"videos" => [
+	"created" => "The Video was successfully created.",
+	"deleted" => "The Video was successfully deleted.",
+	"updated" => "The Video was successfully updated.",
+	],
 	],
 ];

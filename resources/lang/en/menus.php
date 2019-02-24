@@ -114,6 +114,13 @@ return [
 	"management" => "Announcement Management",
 	"main" => "Announcements",
 	],
+	"videos" => [
+	"all" => "All Videos",
+	"create" => "Create Video",
+	"edit" => "Edit Video",
+	"management" => "Video Management",
+	"main" => "Videos",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",

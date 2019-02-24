@@ -54,25 +54,6 @@
     </div><!--form control-->
 
     <div class="form-group">
-        {{ Form::label('featured_video',"Featured Video", ['class' => 'col-lg-2 control-label required']) }}
-        @if(!empty($blog->featured_video))
-            <div class="col-lg-5">
-                <div class="custom-file-input">
-                    <input type="file" name="featured_video" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} files selected" />
-                    <label for="file-2"><i class="fa fa-upload"></i><span>Choose a file</span></label>
-                </div>
-            </div>
-        @else
-            <div class="col-lg-5">
-                <div class="custom-file-input">
-                    <input type="file" name="featured_video" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} files selected" />
-                    <label for="file-2"><i class="fa fa-upload"></i><span>Choose a file</span></label>
-                </div>
-            </div>
-        @endif
-    </div><!--form control-->
-
-    <div class="form-group">
         {{ Form::label('content', trans('validation.attributes.backend.blogs.content'), ['class' => 'col-lg-2 control-label required']) }}
 
         <div class="col-lg-10 mce-box">

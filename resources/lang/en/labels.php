@@ -256,6 +256,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"videos" => [
+	"create" => "Create Video",
+	"edit" => "Edit Video",
+	"management" => "Video Management",
+	"title" => "Videos",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [

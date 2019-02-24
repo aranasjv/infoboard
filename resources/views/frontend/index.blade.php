@@ -20,7 +20,39 @@
         </div><!-- col-md-10 -->
     </div>
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-5">
+            <div class="container-fluid">
+                <div class="col">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style="background-color: #344F79"><i class="fa fa-bullhorn" style="color:#F1EDC4"></i><span style="color:#F1EDC4 " >Announcement</span> </div>
+
+                        <div class="panel-body">
+                            @foreach($announcements as $announcement)
+                                <span style="color:#2A5D8F" > <center><b>{{$announcement->title}}</b></center></span>
+                                {{$announcement->content}}
+                                <hr>
+                            @endforeach
+                        </div>
+                    </div><!-- panel -->
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="col">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" style="background-color: #344F79"><i class="fa fa-calendar" style="color:#F1EDC4"></i><span style="color:#F1EDC4 " > Event Calendars</span> </div>
+
+                        <div class="panel-body">
+                            <div class="panel-body">
+                                {!! $calendar->calendar() !!}
+                                {!! $calendar->script() !!}
+                            </div>
+                        </div>
+                    </div><!-- panel -->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col">
@@ -91,34 +123,38 @@
                     </div><!-- panel -->
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="container-fluid">
-                <div class="col">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" style="background-color: #344F79"><i class="fa fa-bullhorn" style="color:#F1EDC4"></i><span style="color:#F1EDC4 " >Announcement</span> </div>
-
-                        <div class="panel-body">
-                            @foreach($announcements as $announcement)
-                                <span style="color:#2A5D8F" > <center><b>{{$announcement->title}}</b></center></span>
-                                {{$announcement->content}}
-                                <hr>
-                            @endforeach
-                        </div>
-                    </div><!-- panel -->
-                </div>
-            </div>
 
             <div class="container-fluid">
-                <div class="col">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" style="background-color: #344F79"><i class="fa fa-calendar" style="color:#F1EDC4"></i><span style="color:#F1EDC4 " > Event Calendars</span> </div>
+                <div class="row mb-2">
+                    <div class="col">
+                        <div class="col-xs-12">
 
-                        <div class="panel-body">
-                            <div class="panel-body">
-                                {!! $calendar->calendar() !!}
-                                {!! $calendar->script() !!}
+                            <div class="panel panel-default">
+                                <div class="panel-heading" style="background-color: #344F79"><i class="fa fa-info-circle" style="color:#F1EDC4"></i><span style="color:#F1EDC4 " > Information Video</span> </div>
+
+                                <div class="panel-body">
+
+                                    @foreach($videos as $video)
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" style="background-color: #344F79"><span style="color:#F1EDC4 " >{{$video->title}}</span>
+
+                                            </div>
+                                            <div class="panel-body">
+                                                <center>
+                                                <video width="640" height="480" controls>
+                                                    <source src="{{ asset('storage/video/' . $video->video_name) }}"></center>
+                                                </video>
+                                                </center>
+                                            </div>
+                                            <div class="panel-footer text-muted" style="background-color: #344F79">
+                                            </div>
+                                        </div>
+
+                                    @endforeach
+
+                                </div>
                             </div>
+
                         </div>
                     </div><!-- panel -->
                 </div>
@@ -127,4 +163,3 @@
     </div>
 
 @endsection
-

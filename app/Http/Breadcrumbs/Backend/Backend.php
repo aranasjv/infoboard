@@ -19,3 +19,4 @@ require __DIR__.'/LogViewer.php';
 
 require __DIR__.'/Event.php';
 require __DIR__.'/Announcement.php';
+require __DIR__.'/Video.php';

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Models\Blogs\Blog;
 use App\Models\Announcement\Announcement;
 use App\Models\Event\Event;
+use App\Models\Video\Video;
 use App\Http\Controllers\Controller;
 use App\Models\Settings\Setting;
 use App\Repositories\Frontend\Pages\PagesRepository;
@@ -21,6 +22,7 @@ class FrontendController extends Controller
     {
 
         $blogs=Blog::all()->sortByDesc("id");;
+        $videos=Video::all()->sortByDesc("id");;
         $announcements=Announcement::all()->sortByDesc("id");;
         $events = [];
         $data = Event::all();
@@ -48,7 +50,7 @@ class FrontendController extends Controller
     ]
         );
 
-        return view('frontend.index', compact('blogs','calendar','announcements'));
+        return view('frontend.index', compact('blogs','calendar','announcements','videos'));
     }
 
 

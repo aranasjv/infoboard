@@ -26,4 +26,7 @@ return [
 	"announcements" => [
 	"table" => "announcements",
 	],
+	"videos" => [
+	"table" => "videos",
+	],
 ];

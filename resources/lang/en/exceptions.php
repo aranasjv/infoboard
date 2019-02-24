@@ -92,6 +92,13 @@ return [
 	"not_found" => "That Announcement does not exist.",
 	"update_error" => "There was a problem updating this Announcement. Please try again.",
 	],
+	"videos" => [
+	"already_exists" => "That Video already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this Video. Please try again.",
+	"delete_error" => "There was a problem deleting this Video. Please try again.",
+	"not_found" => "That Video does not exist.",
+	"update_error" => "There was a problem updating this Video. Please try again.",
+	],
 	],
 	"frontend" => [
 	"auth" => [
