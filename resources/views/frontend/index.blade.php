@@ -2,25 +2,33 @@
 
 
 @section('content')
-    <!---Welcome---->
-    <div class="container-fluid">
 
-        <div class="col">
 
-            <div class="panel panel-default">
-                <div class="panel-heading" style="background-color: #344F79">
-                    <i class="fa fa-home" style="color:#F1EDC4"></i> <span style="color:#F1EDC4 " >{{ trans('navs.general.home') }}</span>
-                </div>
-
-                <div class="panel-body">
-                   <center>{{ trans('strings.frontend.welcome_to', ['place' => app_name()]) }}</center>
-                </div>
-            </div><!-- panel -->
-
-        </div><!-- col-md-10 -->
-    </div>
     <div class="row">
-        <div class="col-md-5">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8">
+            <!---Welcome---->
+            <div class="container-fluid">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="background-color: #344F79">
+                        <i class="fa fa-home" style="color:#F1EDC4"></i> <span style="color:#F1EDC4 " >{{ trans('navs.general.home') }}</span>
+                    </div>
+
+                    <div class="panel-body">
+                        <center>{{ trans('strings.frontend.welcome_to', ['place' => app_name()]) }}</center>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-2"></div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8">
+            <!-- announcement -->
             <div class="container-fluid">
                 <div class="col">
                     <div class="panel panel-default">
@@ -36,7 +44,61 @@
                     </div><!-- panel -->
                 </div>
             </div>
+            </div>
+        <div class="col-xs-2"></div>
+    </div>
 
+
+
+    <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8"> <!-- Video Post -->
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col">
+                        <div class="col-xs-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" style="background-color: #344F79"><i class="fa fa-info-circle" style="color:#F1EDC4"></i><span style="color:#F1EDC4 " > Information Video</span> </div>
+
+                                <div class="panel-body">
+
+                                    @foreach($videos as $video)
+
+                                        <center><span style="color:#344F79" ><h3>{{$video->title}}</h3></span></center>
+
+
+                                        <div class="panel-body">
+                                            <center>
+                                                <video class="img-responsive"1 width="1280" height="480" controls>
+                                                    <source src="{{ asset('storage/video/' . $video->video_name) }}"></center>
+                                            </video>
+                                            </center>
+                                        </div>
+
+
+                                    @endforeach
+
+                                </div>
+                                <div class="panel-footer" style="background-color: #344F79">
+                                    <center>{{ $videos->links() }}</center>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- panel -->
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-2"></div>
+    </div>
+
+
+
+
+
+    <div class="row" >
+        <div class="col-xs-6">
+            <!-- Calendar -->
             <div class="container-fluid">
                 <div class="col">
                     <div class="panel panel-default">
@@ -52,7 +114,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-7">
+        <div class="col-xs-6">
+            <!-- Image Post -->
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col">
@@ -71,8 +134,10 @@
                                                 </div>
                                                 <div class="panel-body">
                                                     <center><img class="img-responsive" src="{{ asset('storage/img/blog/' . $blog->featured_image) }}" width="200" height="100" alt="Card image cap"></center>
-                                                    <p class="card-text">{!! $blog->content !!}</p>
-                                                    <a href="post/{{$blog->slug}}" class="btn btn-primary">Read More &rarr;</a>
+                                                    @if($blog!=null)
+                                                        <p class="card-text">{!! $blog->meta_description !!}</p>
+                                                    @endif
+                                                    <a href="post/view/{{$blog->slug}}" class="btn btn-primary">Read More &rarr;</a>
                                                 </div>
                                                 <div class="panel-footer text-muted" style="background-color: #344F79">
                                                     <span style="color:#F1EDC4 " > Published on {{$blog->publish_datetime}} by {{$blog->owner->name}}</span>
@@ -98,7 +163,7 @@
                                                     <div class="panel-body">
                                                         <center><img class="img-responsive" src="{{ asset('storage/img/blog/' . $blog->featured_image) }}" width="200" height="100" alt="Card image cap"></center>
                                                         <p class="card-text">{!! $blog->content !!}</p>
-                                                        <a href="post/{{$blog->slug}}" class="btn btn-primary">Read More &rarr;</a>
+                                                        <a href="post/view/{{$blog->slug}}" class="btn btn-primary">Read More &rarr;</a>
                                                     </div>
                                                     <div class="panel-footer text-muted" style="background-color: #344F79">
                                                         <span style="color:#F1EDC4 " > Published on {{$blog->publish_datetime}} by {{$blog->owner->name}}</span>
@@ -114,42 +179,6 @@
                                                 </div>
                                             @endif
                                         @endif
-                                    @endforeach
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div><!-- panel -->
-                </div>
-            </div>
-
-            <div class="container-fluid">
-                <div class="row mb-2">
-                    <div class="col">
-                        <div class="col-xs-12">
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" style="background-color: #344F79"><i class="fa fa-info-circle" style="color:#F1EDC4"></i><span style="color:#F1EDC4 " > Information Video</span> </div>
-
-                                <div class="panel-body">
-
-                                    @foreach($videos as $video)
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading" style="background-color: #344F79"><span style="color:#F1EDC4 " >{{$video->title}}</span>
-
-                                            </div>
-                                            <div class="panel-body">
-                                                <center>
-                                                <video width="640" height="480" controls>
-                                                    <source src="{{ asset('storage/video/' . $video->video_name) }}"></center>
-                                                </video>
-                                                </center>
-                                            </div>
-                                            <div class="panel-footer text-muted" style="background-color: #344F79">
-                                            </div>
-                                        </div>
-
                                     @endforeach
 
                                 </div>

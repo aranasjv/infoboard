@@ -5,7 +5,8 @@
  * All route names are prefixed with 'frontend.'.
  */
 Route::get('/', 'FrontendController@index')->name('index');
-Route::get('/post/{slug}', 'FrontendController@show')->name('post');
+Route::get('/post/view/{slug}', 'FrontendController@showPost')->name('Post');
+Route::get('/event/view/{id}', 'FrontendController@showEvent')->name('Event');
 Route::post('/get/states', 'FrontendController@getStates')->name('get.states');
 Route::post('/get/cities', 'FrontendController@getCities')->name('get.cities');
 

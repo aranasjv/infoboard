@@ -47,15 +47,12 @@
             }
         ?>
     </head>
-    <body id="app-layout">
+    <body id="app-layout" style="background-color:lightcyan;">
         <div id="app">
             @include('includes.partials.logged-in-as')
             @include('frontend.includes.nav')
-
-
                 @include('includes.partials.messages')
                 @yield('content')
-
         </div><!--#app-->
 
         <!-- Scripts -->
@@ -72,5 +69,7 @@
             }
         </script>
         @include('includes.partials.ga')
+
+
     </body>
 </html>

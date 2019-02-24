@@ -73,13 +73,6 @@
         </div><!--col-lg-3-->
     </div><!--form control-->
 
-    <div class="form-group">
-        {{ Form::label('meta_title', trans('validation.attributes.backend.blogs.meta-title'), ['class' => 'col-lg-2 control-label']) }}
-
-        <div class="col-lg-10">
-            {{ Form::text('meta_title', null, ['class' => 'form-control box-size ', 'placeholder' => trans('validation.attributes.backend.blogs.meta-title')]) }}
-        </div><!--col-lg-10-->
-    </div><!--form control-->
 
     <div class="form-group">
         {{ Form::label('slug', trans('validation.attributes.backend.blogs.slug'), ['class' => 'col-lg-2 control-label']) }}
@@ -89,22 +82,6 @@
         </div><!--col-lg-10-->
     </div><!--form control-->
 
-    <div class="form-group">
-        {{ Form::label('cannonical_link', trans('validation.attributes.backend.blogs.cannonical_link'), ['class' => 'col-lg-2 control-label']) }}
-
-        <div class="col-lg-10">
-            {{ Form::text('cannonical_link', null, ['class' => 'form-control box-size', 'placeholder' => trans('validation.attributes.backend.blogs.cannonical_link')]) }}
-        </div><!--col-lg-10-->
-    </div><!--form control-->
-
-
-    <div class="form-group">
-        {{ Form::label('meta_keywords', trans('validation.attributes.backend.blogs.meta_keyword'), ['class' => 'col-lg-2 control-label']) }}
-
-        <div class="col-lg-10">
-            {{ Form::text('meta_keywords', null, ['class' => 'form-control box-size', 'placeholder' => trans('validation.attributes.backend.blogs.meta_keyword')]) }}
-        </div><!--col-lg-10-->
-    </div><!--form control-->
 
     <div class="form-group">
         {{ Form::label('meta_description', trans('validation.attributes.backend.blogs.meta_description'), ['class' => 'col-lg-2 control-label']) }}

@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Settings\Setting;
 use App\Repositories\Frontend\Pages\PagesRepository;
 use Calendar;
+use Illuminate\Support\Facades\DB;
 
 /**
  * Class FrontendController.
@@ -20,9 +21,8 @@ class FrontendController extends Controller
      */
     public function index()
     {
-
-        $blogs=Blog::all()->sortByDesc("id");;
-        $videos=Video::all()->sortByDesc("id");;
+        $blogs = Blog::all()->sortByDesc("id");;
+        $videos=Video::paginate(1);;
         $announcements=Announcement::all()->sortByDesc("id");;
         $events = [];
         $data = Event::all();
@@ -37,6 +37,7 @@ class FrontendController extends Controller
                     // Add color and link on event
                     [
                         'color' => '#192934',
+                        'url' => 'event/view/'.$value->id,
                     ]
                 );
             }
@@ -54,11 +55,18 @@ class FrontendController extends Controller
     }
 
 
-    public function show($slug)
+    public function showPost($slug)
     {
         //fetch from the databse on slug and return the view and pass in the post object
         $blog = Blog::where('slug','=',$slug)->first();
-        return view('frontend.single')->withBlog($blog);
+        return view('frontend.singlePost')->withBlog($blog);
+    }
+
+    public function showEvent($id)
+    {
+        //fetch from the databse on slug and return the view and pass in the post object
+        $event = Event::where('id','=',$id)->first();
+        return view('frontend.singleEvent')->withEvent($event);
     }
     /**
      * show page by $page_slug.
