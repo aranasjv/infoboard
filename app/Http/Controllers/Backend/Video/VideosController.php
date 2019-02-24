@@ -111,7 +111,7 @@ class VideosController extends Controller
             ->toTopic("test") // $topic must an string (topic name)
             ->notification([
                 'title' => 'New video has been added',
-                'body' => 'Check it or wait for it to be published.',
+                'body' => 'Check it!!',
             ])
             ->send();
 
