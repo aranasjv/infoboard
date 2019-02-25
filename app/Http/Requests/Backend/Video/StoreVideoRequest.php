@@ -25,7 +25,6 @@ class StoreVideoRequest extends FormRequest
     {
         return [
             'title' => 'required|max:191',
-            'file' => 'required',
         ];
     }
 
@@ -34,7 +33,6 @@ class StoreVideoRequest extends FormRequest
         return [
             'title.required' => 'Please insert Event Title',
             'title.max' => 'Event Title may not be greater than 191 characters.',
-            'file.required' => 'Please insert Video',
         ];
     }
 }

@@ -58,7 +58,7 @@
                     <div class="col">
                         <div class="col-xs-12">
                             <div class="panel panel-default">
-                                <div class="panel-heading" style="background-color: #344F79"><i class="fa fa-info-circle" style="color:#F1EDC4"></i><span style="color:#F1EDC4 " > Information Video</span> </div>
+                                <div class="panel-heading" style="background-color: #344F79"><i class="fa fa-video-camera" style="color:#F1EDC4"></i><span style="color:#F1EDC4 " > Information Video</span> </div>
 
                                 <div class="panel-body">
 
@@ -79,10 +79,7 @@
                                     @endforeach
 
                                 </div>
-                                <div class="panel-footer" style="background-color: #344F79">
-                                    <center>{{ $videos->links() }}</center>
-
-                                </div>
+                                <div class="panel-footer" style="background-color: #344F79"><center>{{$videos->appends(['blogs' => $blogs->currentPage()])->links()}} </center></div>
                             </div>
                         </div>
                     </div><!-- panel -->
@@ -180,8 +177,8 @@
                                             @endif
                                         @endif
                                     @endforeach
-
                                 </div>
+                                <div class="panel-footer" style="background-color: #344F79"><center>{{$blogs->appends(['videos' => $videos->currentPage()])->links()}}</center></div>
                             </div>
 
                         </div>

@@ -3,11 +3,13 @@
 @section('title','Event')
 
 @section('content')
-    <center><h2>Event title:</h2></center>
+    <center><h2>Event Title:</h2></center>
     <center><h1> {{$event->title}}</h1></center>
 
     <hr>
     <center><h2>Event Detail:</h2></center>
     <center><h3>{!! $event->content !!}</h3></center>
-    <center><a href="/" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Back</a></center>
+    <hr>
+    <center><a href="/" class="btn btn-lg active" role="button" aria-pressed="true" style="background-color:darkred;"><font color="white">Back</font></a></center>
+    <hr>
 @endsection
