@@ -79,7 +79,7 @@
                                     @endforeach
 
                                 </div>
-                                <div class="panel-footer" style="background-color: #344F79"><center>{{$videos->appends(['blogs' => $blogs->currentPage()])->links()}} </center></div>
+                                <div class="panel-footer" style="background-color: #344F79"><center>{!! $videos->render() !!}</center></div>
                             </div>
                         </div>
                     </div><!-- panel -->
@@ -178,7 +178,7 @@
                                         @endif
                                     @endforeach
                                 </div>
-                                <div class="panel-footer" style="background-color: #344F79"><center>{{$blogs->appends(['videos' => $videos->currentPage()])->links()}}</center></div>
+                                <div class="panel-footer" style="background-color: #344F79"><center>{!! $blogs->render() !!}</center></div>
                             </div>
 
                         </div>

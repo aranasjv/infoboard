@@ -21,8 +21,10 @@ class FrontendController extends Controller
      */
     public function index()
     {
-        $blogs = Blog::latest('created_at')->paginate(2, ['*'], 'blogs');;
-        $videos=Video::paginate(1, ['*'], 'videos')->setPageName('video');;
+        $videos=Video::paginate(1,['*'], 'videos');;
+        $blogs = Blog::latest('created_at')->paginate(2,['*'], 'blogs');;
+
+
         $announcements=Announcement::all()->sortByDesc("id");;
         $events = [];
         $data = Event::all();
