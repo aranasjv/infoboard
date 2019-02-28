@@ -36,11 +36,12 @@
 
                         <div class="panel-body">
                             @foreach($announcements as $announcement)
-                                <span style="color:#2A5D8F" > <center><b>{{$announcement->title}}</b></center></span>
-                                {{$announcement->content}}
+                                <span style="Font-size:3vw; color:#2A5D8F" > <center><b>''{{$announcement->title}}''</b></center></span>
+                                <span style="Font-size:2vw;" >{{$announcement->content}}</span>
                                 <hr>
                             @endforeach
                         </div>
+                        <div class="panel-footer" style="background-color: #344F79"><center>{!! $announcements->render() !!}</center></div>
                     </div><!-- panel -->
                 </div>
             </div>

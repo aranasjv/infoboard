@@ -23,9 +23,8 @@ class FrontendController extends Controller
     {
         $videos=Video::paginate(1,['*'], 'videos');;
         $blogs = Blog::latest('created_at')->paginate(2,['*'], 'blogs');;
+        $announcements=Announcement::latest('created_at')->paginate(3,['*'], 'announcements');;
 
-
-        $announcements=Announcement::all()->sortByDesc("id");;
         $events = [];
         $data = Event::all();
         if($data->count()) {

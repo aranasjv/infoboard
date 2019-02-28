@@ -77,7 +77,7 @@
 
             <!-- Copyright -->
             <div class="footer-copyright text-center py-3">© 2018-2019 Copyright:CpE 4 - Information MultiMediaBoard Created by John Veniel Aranas, Freedom Anthony Vitasa and Ianjames Reonal
-            <p>Adviser: Engr. Herero and Moderator: Engr. Marquez</p>
+            <p>Adviser: Engr. Herrero and Moderator: Engr. Marquez</p>
             </div>
             <!-- Copyright -->
 
