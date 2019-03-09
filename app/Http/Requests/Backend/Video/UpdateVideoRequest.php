@@ -25,16 +25,18 @@ class UpdateVideoRequest extends FormRequest
     {
         return [
             'title' => 'required|max:191',
-            'video_name' => 'required',
+            'video_name' => 'required|mimes:mpeg,ogg,mp4,webm,3gp,mov,flv,avi,wmv,ts|max:100000',
         ];
     }
 
     public function messages()
     {
         return [
-            'title.required' => 'Please insert Event Title',
-            'title.max' => 'Event Title may not be greater than 191 characters.',
+            'title.required' => 'Please insert Video Title',
+            'title.max' => 'Video Title may not be greater than 191 characters.',
             'video_name.required' => 'Please insert Video',
+            'video_name.max' => 'Video has a limit of 100mb per upload',
+            'video_name.mimes' => 'Video file type is unsupported',
         ];
     }
 }

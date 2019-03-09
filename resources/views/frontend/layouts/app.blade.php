@@ -46,6 +46,28 @@
                 echo $google_analytics;
             }
         ?>
+            <style>
+            #box1 {
+            width: min-content;
+            display: table;
+            position: relative;
+            background: #334b64;
+            margin: 0px auto 20px auto;
+            box-shadow: 0px 0px 50px rgba(29, 80, 123, 0.3);
+            }
+
+            #txt1 {
+            color: white;
+            font-size: 14;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            height: auto;
+            word-wrap: break-word;
+            white-space: pre-wrap
+            }
+            </style>
+
     </head>
     <body id="app-layout" style="background-color:lightcyan;">
         <div id="app">

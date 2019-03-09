@@ -1,6 +1,7 @@
 @extends('frontend.layouts.app')
 
 
+
 @section('content')
 
 
@@ -36,8 +37,8 @@
 
                         <div class="panel-body">
                             @foreach($announcements as $announcement)
-                                <span style="Font-size:3vw; color:#2A5D8F" > <center><b>''{{$announcement->title}}''</b></center></span>
-                                <span style="Font-size:2vw;" >{{$announcement->content}}</span>
+                                <p style="text-align: center;  color:#2A5D8F;" > <b>''{{$announcement->title}}''</b></p>
+                                <span style="text-align: left" >{{$announcement->content}}</span>
                                 <hr>
                             @endforeach
                         </div>
