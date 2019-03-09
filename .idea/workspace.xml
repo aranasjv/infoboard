@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ea607c84-ca83-4ef7-bf5c-f13496486fbd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/Backend/Announcement/StoreAnnouncementRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/Backend/Announcement/StoreAnnouncementRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/Backend/Announcement/UpdateAnnouncementRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/Backend/Announcement/UpdateAnnouncementRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/Backend/Video/StoreVideoRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/Backend/Video/StoreVideoRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/Backend/Video/UpdateVideoRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/Backend/Video/UpdateVideoRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/app.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/Video/VideosController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/Video/VideosController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -83,8 +78,8 @@
       <file leaf-file-name="VideosController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/Video/VideosController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+            <state relative-caret-position="470">
+              <caret line="112" column="60" lean-forward="false" selection-start-line="112" selection-start-column="60" selection-end-line="112" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -167,9 +162,9 @@
         <option value="$PROJECT_DIR$/resources/views/frontend/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/Backend/Announcement/UpdateAnnouncementRequest.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/Backend/Announcement/StoreAnnouncementRequest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Backend/Video/VideosController.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/Backend/Video/StoreVideoRequest.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/Backend/Video/UpdateVideoRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Backend/Video/VideosController.php" />
       </list>
     </option>
   </component>
@@ -735,12 +730,12 @@
       <workItem from="1551576881542" duration="5278000" />
       <workItem from="1552129180254" duration="1000" />
       <workItem from="1552129267491" duration="2000" />
-      <workItem from="1552129283614" duration="3795000" />
+      <workItem from="1552129283614" duration="5270000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129274000" />
+    <option name="totallyTimeSpent" value="130749000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1168,8 +1163,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/Video/VideosController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+        <state relative-caret-position="470">
+          <caret line="112" column="60" lean-forward="false" selection-start-line="112" selection-start-column="60" selection-end-line="112" selection-end-column="60" />
           <folding />
         </state>
       </provider>
