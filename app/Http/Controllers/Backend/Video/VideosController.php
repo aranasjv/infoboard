@@ -108,9 +108,9 @@ class VideosController extends Controller
         $topic = 'test';
 
         fcm()
-            ->toTopic($topic) // $topic must an string (topic name)
+            ->toTopic("test") // $topic must an string (topic name)
             ->notification([
-                'title' => 'New video has been added titled '.$fileName,
+                'title' => 'New video has been added ',
                 'body' => 'Check it!!',
             ])
             ->send();
