@@ -14,6 +14,7 @@
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
             <script type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.js"></script>
+
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,12 +38,40 @@
         {!! Html::style('js/select2/select2.css') !!}
         @yield('after-styles')
 
+        <!-- Scripts -->
+            <script>
+                window.Laravel = <?php echo json_encode([
+                    'csrfToken' => csrf_token(),
+                ]); ?>
+            </script>
+
             <script type="text/javascript">
                 $.fn.ready(function(){
                     $("p").fitText(2,{'minFontSize':10, 'maxfontsize':15});
                 })
 
             </script>
+
+            <style>
+                #box1 {
+                    width: min-content;
+                    display: table;
+                    position: relative;
+                    background: #334b64;
+                    margin: 0px auto 20px auto;
+                    box-shadow: 0px 0px 50px rgba(29, 80, 123, 0.3);
+                }
+                #txt1 {
+                    color: white;
+                    font-size: 14;
+                    text-align: center;
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                    word-wrap: break-word;
+                    white-space: pre-wrap
+                }
+            </style>
 
     </head>
     <body id="app-layout" style="background-color: #1E5FA3;">
@@ -59,6 +88,14 @@
         {{ Html::script('js/jquerysession.js') }}
         {{ Html::script('js/frontend/frontend.js') }}
         {!! Html::script('js/select2/select2.js') !!}
+
+        <script type="text/javascript">
+            if("{{Route::currentRouteName()}}" !== "frontend.user.account")
+            {
+                $.session.clear();
+            }
+        </script>
+        @include('includes.partials.ga')
     </body>
 
         <footer class="page-footer font-small blue">
