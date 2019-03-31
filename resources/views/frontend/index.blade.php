@@ -83,11 +83,9 @@
 
                                         <div class="panel-body">
                                             <center>
-                                                <video width="640" height="360" controls>
-                                                    <!-- MP4 must be first for iPad! -->
-                                                    <source src="{{ asset('storage/video/' . $video->video_name) }}" type="video/mp4" /><!-- Safari / iOS video    -->
-                                                    <source src="{{ asset('storage/video/' . $video->video_name) }}" type="video/ogg" /><!-- Firefox / Opera / Chrome10 -->
-                                                </video>
+                                                <video class="img-responsive"1 width="1280" height="480" controls>
+                                                    <source src="{{ asset('storage/video/' . $video->video_name) }}"></center>
+                                            </video>
                                             </center>
                                         </div>
 
