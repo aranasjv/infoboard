@@ -1,7 +1,12 @@
-@extends('frontend.layouts.app')
+@extends('frontend.layouts.app2')
 
 @section('content')
 
+    <br>
+    <br>
+    <br>
+
+    <center><span style="color:#ffffff " ><H1>ADMINISTRATOR DASHBOARD LOGIN FOR INFORMATION MULTIMEDIABOARD</H1></span></center>
     <div class="row">
 
         <div class="col-md-8 col-md-offset-2">
