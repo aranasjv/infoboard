@@ -23,7 +23,7 @@ class FrontendController extends Controller
     {
         $videos=Video::paginate(1,['*'], 'videos');;
         $blogs = Blog::latest('created_at')->paginate(2,['*'], 'blogs');;
-        $announcements=Announcement::latest('created_at')->paginate(3,['*'], 'announcements');;
+        $announcements=Announcement::latest('created_at')->paginate(8,['*'], 'announcements');;
 
         $events = [];
         $data = Event::all();
