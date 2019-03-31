@@ -25,6 +25,8 @@
                             “https://github.com/aranasjv/CpE4---Multimedia Board-Android
                             App/blob/master/CpE-4.apk"
                         </h5></p>
+
+                            <H5>*compatible with android phone with Android version 4 and above*</H5>
                         </center>
                     </div>
                 </div>
