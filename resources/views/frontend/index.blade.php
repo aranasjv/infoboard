@@ -7,9 +7,10 @@
     <br>
     <br>
     <br>
+    <div class="container">
     <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-10">
+
+        <div class="col-12">
             <!---Welcome---->
             <div class="container-fluid">
                 <div class="panel panel-default">
@@ -32,9 +33,9 @@
                 </div>
             </div>
         </div >
-        <div class="col-sm-1"></div>
-    </div>
 
+    </div>
+    </div>
     <div  class="row" id="announcement">
         <div class="col-sm-1"></div>
         <div class="col-sm-10">

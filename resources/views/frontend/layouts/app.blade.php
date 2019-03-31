@@ -43,7 +43,9 @@
         <div id="app">
             @include('frontend.includes.nav')
                 @include('includes.partials.messages')
+            <div class="container-fluid">
                 @yield('content')
+            </div>
         </div><!--#app-->
 
         <!-- Scripts -->
@@ -93,7 +95,7 @@
 
             </div>
             <!-- Copyright -->
+>
 
-
-        </footer>
+       </footer>
 </html>

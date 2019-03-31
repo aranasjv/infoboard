@@ -1,4 +1,4 @@
-@extends('frontend.layouts.app1')
+@extends('frontend.layouts.app')
 
 @section('title','Event')
 
