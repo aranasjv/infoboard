@@ -1,15 +1,24 @@
-<nav class="navbar navbar light" style="background-color: #192934">
+<nav class="navbar navbar-fixed-top navbar-inverse" style="background-color: #1B3F8B;">
 
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#frontend-navbar-collapse">
-                <span class="sr-only">{{ trans('labels.general.toggle_navigation') }}</span>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
+            {{ link_to_route('frontend.index',app_name(), [], ['class' => 'navbar-brand']), ['style' => 'color:#ffffff'] }}
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="#announcement"><span style="color:#ffffff " >Announcement</span></a></li>
+                <li><a href="#video"><span style="color:#ffffff " >Video</span></a></li>
+                <li><a href="#calendar"><span style="color:#ffffff " >Events</span></a></li>
+                <li><a href="#post"><span style="color:#ffffff " >Information Post</span></a></li>
 
-           {{--   @if(settings()->logo)
-            <a href="{{ route('frontend.index') }}" class="logo"><img height="48" width="226" class="navbar-brand" src="{{route('frontend.index')}}/img/site_logo/{{settings()->logo}}"></a>
-            @else --}}
-             {{ link_to_route('frontend.index',app_name(), [], ['class' => 'navbar-brand']) }}
-           {{--  @endif --}}
-        </div><!--navbar-header-->
+            </ul>
+        </div><!--/.nav-collapse -->
+
 
 </nav>

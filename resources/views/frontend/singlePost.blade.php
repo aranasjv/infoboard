@@ -1,9 +1,13 @@
-@extends('frontend.layouts.app')
+@extends('frontend.layouts.app1')
 
 @section('title','Post')
 
 @section('content')
 
+    <br>
+    <br>
+    <br>
+    <font color="white">
     <center><h1> {{$blog->name}}   </h1></center>
     <center> by {{$blog->owner->name}}</center>
     <hr>
@@ -13,6 +17,7 @@
     <hr>
     <center><a href="/" class="btn btn-lg active" role="button" aria-pressed="true" style="background-color:darkred;"><font color="white">Back</font></a></center>
     <hr>
+    </font>
 
 @endsection
 

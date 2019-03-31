@@ -4,36 +4,43 @@
 
 @section('content')
 
-
+    <br>
+    <br>
+    <br>
     <div class="row">
         <div class="col-sm-1"></div>
         <div class="col-sm-10">
             <!---Welcome---->
             <div class="container-fluid">
                 <div class="panel panel-default">
-                    <div class="panel-heading" style="background-color: #344F79">
-                        <i class="fa fa-home" style="color:#F1EDC4"></i> <span style="color:#F1EDC4 " >{{ trans('navs.general.home') }}</span>
+                    <div class="panel-heading" style="background-color: #bc3330">
+                        <i class="fa fa-home" style="color:#ffffff"></i> <span style="color:#ffffff " >{{ trans('navs.general.home') }}</span>
                     </div>
 
-                    <div class="panel-body">
-                        <center>{{ trans('strings.frontend.welcome_to', ['place' => app_name()]) }}</center>
+                    <div class="panel-body" >
+                        <center>{{ trans('strings.frontend.welcome_to', ['place' => app_name()]) }}
+                        <p><h5>
+                            To receive push notification of the latest information and view the information on your android phones.<br>
+                            Download the Android Application for this Information MultiMediaboard on:<br>
+                            “https://github.com/aranasjv/CpE4---Multimedia Board-Android
+                            App/blob/master/CpE-4.apk"
+                        </h5></p>
+                        </center>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
         <div class="col-sm-1"></div>
     </div>
 
-
-
-    <div class="row">
+    <div  class="row" id="announcement">
         <div class="col-sm-1"></div>
         <div class="col-sm-10">
             <!-- announcement -->
             <div class="container-fluid">
                 <div class="col">
                     <div class="panel panel-default">
-                        <div class="panel-heading" style="background-color: #344F79"><i class="fa fa-bullhorn" style="color:#F1EDC4"></i><span style="color:#F1EDC4 " >Announcement</span> </div>
+                        <div class="panel-heading" style="background-color: #bc3330"><i class="fa fa-bullhorn" style="color:#ffffff"></i><span style="color:#ffffff " >Announcement</span> </div>
 
                         <div class="panel-body">
                             @foreach($announcements as $announcement)
@@ -42,7 +49,7 @@
                                 <hr>
                             @endforeach
                         </div>
-                        <div class="panel-footer" style="background-color: #344F79"><center>{!! $announcements->render() !!}</center></div>
+                        <div class="panel-footer" style="background-color: #bc3330"><center>{!! $announcements->render() !!}</center></div>
                     </div><!-- panel -->
                 </div>
             </div>
@@ -52,7 +59,7 @@
 
 
 
-    <div class="row">
+    <div class="row" id="video">
         <div class="col-sm-1"></div>
         <div class="col-sm-10"> <!-- Video Post -->
             <div class="container-fluid">
@@ -60,7 +67,7 @@
                     <div class="col">
                         <div class="col-xs-12">
                             <div class="panel panel-default">
-                                <div class="panel-heading" style="background-color: #344F79"><i class="fa fa-video-camera" style="color:#F1EDC4"></i><span style="color:#F1EDC4 " > Information Video</span> </div>
+                                <div class="panel-heading" style="background-color: #bc3330"><i class="fa fa-video-camera" style="color:#ffffff"></i><span style="color:#ffffff " > Information Video</span> </div>
 
                                 <div class="panel-body">
 
@@ -81,7 +88,7 @@
                                     @endforeach
 
                                 </div>
-                                <div class="panel-footer" style="background-color: #344F79"><center>{!! $videos->render() !!}</center></div>
+                                <div class="panel-footer" style="background-color: #bc3330"><center>{!! $videos->render() !!}</center></div>
                             </div>
                         </div>
                     </div><!-- panel -->
@@ -92,43 +99,47 @@
     </div>
 
 
-
-
-
-    <div class="row" >
-        <div class="col-sm-6">
-            <!-- Calendar -->
-            <div class="container-fluid">
-                <div class="col">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" style="background-color: #344F79"><i class="fa fa-calendar" style="color:#F1EDC4"></i><span style="color:#F1EDC4 " > Event Calendars</span> </div>
-
-                        <div class="panel-body">
-                            <div class="panel-body">
-                                {!! $calendar->calendar() !!}
-                                {!! $calendar->script() !!}
-                            </div>
-                        </div>
-                    </div><!-- panel -->
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6">
-            <!-- Image Post -->
+    <div class="row" id="calendar">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10"> <!-- Video Post -->
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col">
                         <div class="col-xs-12">
-
                             <div class="panel panel-default">
-                                <div class="panel-heading" style="background-color: #344F79"><i class="fa fa-info-circle" style="color:#F1EDC4"></i><span style="color:#F1EDC4 " > Information Posts</span> </div>
+                                <div class="panel-heading" style="background-color: #bc3330"><i class="fa fa-calendar" style="color:#ffffff"></i><span style="color:#ffffff " > Event Calendars</span> </div>
+
+                                <div class="panel-body">
+                                    <div class="panel-body">
+                                        {!! $calendar->calendar() !!}
+                                        {!! $calendar->script() !!}
+                                    </div>
+                                </div>
+                            </div><!-- panel -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+    <div class="row" id="post">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10"> <!-- Video Post -->
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col">
+                        <div class="col-xs-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" style="background-color: #bc3330"><i class="fa fa-info-circle" style="color:#ffffff"></i><span style="color:#ffffff " > Information Posts</span> </div>
 
                                 <div class="panel-body">
 
                                     @foreach($blogs as $blog)
                                         @if($blog->status == 'Published')
                                             <div class="panel panel-default">
-                                                <div class="panel-heading" style="background-color: #344F79"><span style="color:#F1EDC4 " >{{$blog->name}}</span>
+                                                <div class="panel-heading" style="background-color: #bc3330"><span style="color:#ffffff " >{{$blog->name}}</span>
 
                                                 </div>
                                                 <div class="panel-body">
@@ -138,7 +149,7 @@
                                                     @endif
                                                     <a href="post/view/{{$blog->slug}}" class="btn btn-primary">Read More &rarr;</a>
                                                 </div>
-                                                <div class="panel-footer text-muted" style="background-color: #344F79">
+                                                <div class="panel-footer text-muted" style="background-color: #bc3330">
                                                     <span style="color:#F1EDC4 " > Published on {{$blog->publish_datetime}} by {{$blog->owner->name}}</span>
                                                     <div>
                                                         @foreach($blog->categories as $category)
@@ -156,7 +167,7 @@
                                             ?>
                                             @if($publish_date->isPast())
                                                 <div class="panel panel-default">
-                                                    <div class="panel-heading" style="background-color: #344F79"></i><span style="color:#F1EDC4 " >{{$blog->name}}</span>
+                                                    <div class="panel-heading" style="background-color: #bc3330"></i><span style="color:#ffffff " >{{$blog->name}}</span>
 
                                                     </div>
                                                     <div class="panel-body">
@@ -164,7 +175,7 @@
                                                         <p class="card-text">{!! $blog->content !!}</p>
                                                         <a href="post/view/{{$blog->slug}}" class="btn btn-primary">Read More &rarr;</a>
                                                     </div>
-                                                    <div class="panel-footer text-muted" style="background-color: #344F79">
+                                                    <div class="panel-footer text-muted" style="background-color: #bc3330">
                                                         <span style="color:#F1EDC4 " > Published on {{$blog->publish_datetime}} by {{$blog->owner->name}}</span>
                                                         <div>
                                                             @foreach($blog->categories as $category)
@@ -180,14 +191,15 @@
                                         @endif
                                     @endforeach
                                 </div>
-                                <div class="panel-footer" style="background-color: #344F79"><center>{!! $blogs->render() !!}</center></div>
+                                <div class="panel-footer" style="background-color: #bc3330"><center>{!! $blogs->render() !!}</center></div>
                             </div>
-
                         </div>
-                    </div><!-- panel -->
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="col-sm-1"></div>
     </div>
+
 
 @endsection
