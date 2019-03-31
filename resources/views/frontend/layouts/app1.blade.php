@@ -39,7 +39,7 @@
 
 
 </head>
-<body id="app-layout" style="background-color: #3498db;">
+<body id="app-layout" style="background-color: #1E5FA3;">
 <div id="app">
     @include('frontend.includes.nav1')
     @include('includes.partials.messages')
@@ -70,7 +70,7 @@
 
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header" style="background-color:	#1E5FA3;">
+                <div class="modal-header" style="background-color:	#344F79;">
                     <h4 class="modal-title"><span style="color:#ffffff " >Privacy Policy</span></h4>
                 </div>
                 <div class="modal-body">
