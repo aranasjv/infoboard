@@ -82,14 +82,14 @@
                             <h4 class="modal-title"><span style="color:#ffffff " >Privacy Policy</span></h4>
                         </div>
                         <div class="modal-body">
-                            <p><b>Information We Collect Automatically</b>
-                                When you access or use our Services, we may also automatically collect information about you. This includes:
+                            <p><b>Information We Collect Automatically</b><br>
+                                When you access or use our Services, we may also automatically collect information about you. This includes:<br>
 
-                                Log and usage data.  We may log information when you access and use the Services. This may include your IP address, user-agent string, browser type, operating system, referral URLs, device information (e.g., device IDs), pages visited, links clicked, the requested URL, hardware settings, and search terms.
+                                <b>Log and usage data.</b>  We may log information when you access and use the Services. This may include your IP address, user-agent string, browser type, operating system, referral URLs, device information (e.g., device IDs), pages visited, links clicked, the requested URL, hardware settings, and search terms.<br>
 
-                                Information collected from cookies and similar technologies.  We may receive information from cookies, which are pieces of data your browser stores and sends back to us when making requests, and similar technologies. We use this information to improve your experience, understand user activity, personalize content and advertisements, and improve the quality of our Services. For example, we store and retrieve information about your preferred language and other settings. For more information on how you can disable cookies, please see “Your Choices” below.
+                                <b>Information collected from cookies and similar technologies.</b>  We may receive information from cookies, which are pieces of data your browser stores and sends back to us when making requests, and similar technologies. We use this information to improve your experience, understand user activity, personalize content and advertisements, and improve the quality of our Services. For example, we store and retrieve information about your preferred language and other settings.<br>
 
-                                Location information.  We may receive and process information about your location. For example, with your consent, we may collect information about the specific location of your mobile device (for example, by using GPS or Bluetooth). We may also receive location information from you when you choose to share such information on our Services, including by associating your content with a location, or we may derive your approximate location from other information about you, including your IP address.</p>
+                                <b>Location information.</b>  We may receive and process information about your location. For example, with your consent, we may collect information about the specific location of your mobile device (for example, by using GPS or Bluetooth). We may also receive location information from you when you choose to share such information on our Services, including by associating your content with a location, or we may derive your approximate location from other information about you, including your IP address.</p>
                         </div>
                         <div class="modal-footer" style="background-color:	#344F79;">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
