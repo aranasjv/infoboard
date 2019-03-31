@@ -13,7 +13,7 @@
             <script src='../fullcalendar.min.js'></script>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
+            <script type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.js"></script>
 
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,8 +45,12 @@
                 ]); ?>
             </script>
 
+            <script type="text/javascript">
+                $.fn.ready(function(){
+                    $("p").fitText(2,{'minFontSize':10, 'maxfontsize':15});
+                })
 
-
+            </script>
 
             <style>
                 #box1 {
