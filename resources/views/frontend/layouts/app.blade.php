@@ -45,7 +45,7 @@
             </script>
 
     </head>
-    <body id="app-layout" style="background-color: #3498db;">
+    <body id="app-layout" style="background-color: #1E5FA3;">
         <div id="app">
             @include('frontend.includes.nav')
                 @include('includes.partials.messages')

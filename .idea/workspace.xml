@@ -20,9 +20,11 @@
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/frontend/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+            <state relative-caret-position="272">
+              <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
               <folding>
+                <element signature="e#357#390#0#HTML" expanded="true" />
+                <element signature="e#438#459#0#HTML" expanded="true" />
                 <element signature="e#2029#2072#0#HTML" expanded="true" />
                 <element signature="e#2224#2248#0#HTML" expanded="true" />
                 <element signature="e#2440#2473#0#HTML" expanded="true" />
@@ -64,28 +66,30 @@
       <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/frontend/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="87" column="349" lean-forward="false" selection-start-line="87" selection-start-column="349" selection-end-line="87" selection-end-column="349" />
+            <state relative-caret-position="346">
+              <caret line="47" column="51" lean-forward="false" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app1.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app1.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/frontend/layouts/app1.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="79" column="341" lean-forward="false" selection-start-line="79" selection-start-column="341" selection-end-line="79" selection-end-column="341" />
-              <folding />
+            <state relative-caret-position="408">
+              <caret line="72" column="68" lean-forward="false" selection-start-line="72" selection-start-column="68" selection-end-line="72" selection-end-column="68" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app2.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app2.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/frontend/layouts/app2.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="77" column="338" lean-forward="false" selection-start-line="77" selection-start-column="338" selection-end-line="77" selection-end-column="342" />
+            <state relative-caret-position="462">
+              <caret line="70" column="75" lean-forward="false" selection-start-line="70" selection-start-column="75" selection-end-line="70" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -189,9 +193,9 @@
         <option value="$PROJECT_DIR$/resources/views/frontend/singleEvent.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Frontend/FrontendController.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/frontend/layouts/app2.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/frontend/layouts/app1.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend/layouts/app1.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend/layouts/app2.blade.php" />
       </list>
     </option>
   </component>
@@ -530,12 +534,12 @@
       <workItem from="1552129283614" duration="5933000" />
       <workItem from="1552351328029" duration="815000" />
       <workItem from="1554014691831" duration="14418000" />
-      <workItem from="1554030282040" duration="2727000" />
+      <workItem from="1554030282040" duration="3474000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149372000" />
+    <option name="totallyTimeSpent" value="150119000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -906,18 +910,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding>
-            <element signature="e#2029#2072#0#HTML" expanded="true" />
-            <element signature="e#2224#2248#0#HTML" expanded="true" />
-            <element signature="e#2440#2473#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/FrontendController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -926,26 +918,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/layouts/app2.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="77" column="338" lean-forward="false" selection-start-line="77" selection-start-column="338" selection-end-line="77" selection-end-column="342" />
-          <folding />
+        <state relative-caret-position="272">
+          <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+          <folding>
+            <element signature="e#357#390#0#HTML" expanded="true" />
+            <element signature="e#438#459#0#HTML" expanded="true" />
+            <element signature="e#2029#2072#0#HTML" expanded="true" />
+            <element signature="e#2224#2248#0#HTML" expanded="true" />
+            <element signature="e#2440#2473#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/frontend/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="87" column="349" lean-forward="false" selection-start-line="87" selection-start-column="349" selection-end-line="87" selection-end-column="349" />
+        <state relative-caret-position="346">
+          <caret line="47" column="51" lean-forward="false" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/frontend/layouts/app1.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="79" column="341" lean-forward="false" selection-start-line="79" selection-start-column="341" selection-end-line="79" selection-end-column="341" />
+        <state relative-caret-position="408">
+          <caret line="72" column="68" lean-forward="false" selection-start-line="72" selection-start-column="68" selection-end-line="72" selection-end-column="68" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/layouts/app2.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="70" column="75" lean-forward="false" selection-start-line="70" selection-start-column="75" selection-end-line="70" selection-end-column="75" />
           <folding />
         </state>
       </provider>
