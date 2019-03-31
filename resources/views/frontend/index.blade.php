@@ -47,8 +47,10 @@
 
                         <div class="panel-body">
                             @foreach($announcements as $announcement)
-                                <p style="text-align: center;  color:#2A5D8F;" > <b>''{{$announcement->title}}''</b></p>
-                                <span style="text-align: left" >{{$announcement->content}}</span>
+                                <p style="text-align: center;  color:#2A5D8F;" > <b>''{{$announcement->title}}'' <br> <center><h6>Posted at {{$announcement->created_at}}</h6></center> </b></p>
+
+                                <p  style="text-align: left" >{{$announcement->content}}</p>
+
                                 <hr>
                             @endforeach
                         </div>
@@ -76,7 +78,7 @@
 
                                     @foreach($videos as $video)
 
-                                        <center><span style="color:#344F79" ><h3>{{$video->title}}</h3></span></center>
+                                        <center><span style="color:#344F79" ><h3>{{$video->title}}</h3> <h6>Uploaded at {{$announcement->created_at}}</h6> </span></center>
 
 
                                         <div class="panel-body">

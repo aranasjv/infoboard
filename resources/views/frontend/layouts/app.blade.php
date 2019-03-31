@@ -13,7 +13,7 @@
             <script src='../fullcalendar.min.js'></script>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
+            <script type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.js"></script>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,6 +37,12 @@
         {!! Html::style('js/select2/select2.css') !!}
         @yield('after-styles')
 
+            <script type="text/javascript">
+                $.fn.ready(function(){
+                    $("p").fitText(2,{'minFontSize':10, 'maxfontsize':15});
+                })
+
+            </script>
 
     </head>
     <body id="app-layout" style="background-color: #3498db;">
