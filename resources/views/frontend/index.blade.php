@@ -83,7 +83,7 @@
 
                                         <div class="panel-body">
                                             <center>
-                                                <video class="img-responsive" width="1280" height="480" controls>
+                                                <video class="img-responsive" width="1280" height="480" >
                                                     <source src="{{ asset('storage/video/' . $video->video_name) }}"></center>
                                             </video>
                                             </center>
