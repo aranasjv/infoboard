@@ -74,8 +74,8 @@
             </style>
 
     </head>
-    <body id="app-layout" style="background-color: #1E5FA3;">
-        <div id="app">
+    <body id="app-layout" style="background-color: #1E5FA3;" >
+        <div id="home">
             @include('frontend.includes.nav')
                 @include('includes.partials.messages')
             <div class="container-fluid">

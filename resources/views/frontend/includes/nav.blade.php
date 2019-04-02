@@ -11,7 +11,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home</a></li>
+                <li class="active"><a href="#home">Home</a></li>
                 <li><a href="#announcement"><span style="color:#ffffff " >Announcement</span></a></li>
                 <li><a href="#video"><span style="color:#ffffff " >Video</span></a></li>
                 <li><a href="#calendar"><span style="color:#ffffff " >Events</span></a></li>
