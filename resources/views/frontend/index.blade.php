@@ -18,7 +18,7 @@
                         <i class="fa fa-home" style="color:#ffffff"></i> <span style="color:#ffffff " >{{ trans('navs.general.home') }}</span>
                     </div>
 
-                    <div class="panel-body" >
+                    <div class="panel-body">
                         <center>{{ trans('strings.frontend.welcome_to', ['place' => app_name()]) }}
                         <p><h5>
                             To receive push notification of the latest information and view the information on your android phones.<br>
@@ -27,7 +27,7 @@
                             App/blob/master/CpE-4.apk"
                         </h5></p>
 
-                            <H5>*compatible with android phone with Android version 4 and above*</H5>
+                            <H5 id="announcement">*compatible with android phone with Android version 4 and above*</H5>
                         </center>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
 
     </div>
     </div>
-    <div  class="row" id="announcement">
+    <div  class="row">
         <div class="col-sm-1"></div>
         <div class="col-sm-10">
             <!-- announcement -->
@@ -54,7 +54,7 @@
                                 <hr>
                             @endforeach
                         </div>
-                        <div class="panel-footer" style="background-color: #bc3330"><center>{!! $announcements->render() !!}</center></div>
+                        <div id="video" class="panel-footer" style="background-color: #bc3330"><center>{!! $announcements->render() !!}</center></div>
                     </div><!-- panel -->
                 </div>
             </div>
@@ -64,7 +64,7 @@
 
 
 
-    <div class="row" id="video">
+    <div class="row" >
         <div class="col-sm-1"></div>
         <div class="col-sm-10"> <!-- Video Post -->
             <div class="container-fluid">
@@ -93,7 +93,7 @@
                                     @endforeach
 
                                 </div>
-                                <div class="panel-footer" style="background-color: #bc3330"><center>{!! $videos->render() !!}</center></div>
+                                <div id="calendar" class="panel-footer" style="background-color: #bc3330"><center>{!! $videos->render() !!}</center></div>
                             </div>
                         </div>
                     </div><!-- panel -->
@@ -104,7 +104,7 @@
     </div>
 
 
-    <div class="row" id="calendar">
+    <div class="row" >
         <div class="col-sm-1"></div>
         <div class="col-sm-10"> <!-- Video Post -->
             <div class="container-fluid">
@@ -120,6 +120,7 @@
                                         {!! $calendar->script() !!}
                                     </div>
                                 </div>
+                                <div id="post" class="panel-footer" style="background-color: #bc3330"></div>
                             </div><!-- panel -->
                         </div>
                     </div>
@@ -129,7 +130,7 @@
         <div class="col-sm-1"></div>
     </div>
 
-    <div class="row" id="post">
+    <div class="row" >
         <div class="col-sm-1"></div>
         <div class="col-sm-10"> <!-- Video Post -->
             <div class="container-fluid">
