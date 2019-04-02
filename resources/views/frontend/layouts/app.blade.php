@@ -53,6 +53,10 @@
             </script>
 
             <style>
+
+                html {
+                    scroll-behavior: smooth;
+                }
                 #box1 {
                     width: min-content;
                     display: table;
