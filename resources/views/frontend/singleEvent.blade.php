@@ -7,12 +7,12 @@
     <br>
     <br>
     <font color="white">
-    <center><h2>Event Title:</h2></center>
-    <center><h1> {{$event->title}}</h1></center>
+    <center><h3>Event Title:</h3></center>
+    <center><p><h1>{{$event->title}}</h1></p></center>
 
     <hr>
-    <center><h2>Event Detail:</h2></center>
-    <center><p>{!! $event->content !!}</p></center>
+    <center><h3>Event Detail:</h3></center>
+    <center><p><h1>{!! $event->content !!}</h1> </p> </center>
     <hr>
     <center><a href="/" class="btn btn-lg active" role="button" aria-pressed="true" style="background-color:darkred;"><font color="white">Back</font></a></center>
     <hr>
