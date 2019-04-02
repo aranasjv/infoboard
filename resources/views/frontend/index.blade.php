@@ -78,7 +78,7 @@
 
                                     @foreach($videos as $video)
 
-                                        <center><span style="color:#344F79" ><h3>{{$video->title}}</h3> <h6>Uploaded at {{$announcement->created_at}}</h6> </span></center>
+                                        <center><span style="color:#344F79" ><h3>{{$video->title}}</h3> <h6>Uploaded at {{$video->created_at}}</h6> </span></center>
 
 
                                         <div class="panel-body">

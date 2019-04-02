@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ea607c84-ca83-4ef7-bf5c-f13496486fbd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/frontend/singleEvent.blade.php" afterPath="$PROJECT_DIR$/resources/views/frontend/singleEvent.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/frontend/singlePost.blade.php" afterPath="$PROJECT_DIR$/resources/views/frontend/singlePost.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,17 +15,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/frontend/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="80" column="108" lean-forward="false" selection-start-line="80" selection-start-column="108" selection-end-line="80" selection-end-column="108" />
+            <state relative-caret-position="289">
+              <caret line="80" column="128" lean-forward="false" selection-start-line="80" selection-start-column="128" selection-end-line="80" selection-end-column="128" />
               <folding>
                 <element signature="e#357#390#0#HTML" expanded="true" />
                 <element signature="e#438#459#0#HTML" expanded="true" />
                 <element signature="e#2029#2072#0#HTML" expanded="true" />
                 <element signature="e#2224#2248#0#HTML" expanded="true" />
                 <element signature="e#2440#2473#0#HTML" expanded="true" />
+                <element signature="e#3157#3178#0#HTML" expanded="true" />
+                <element signature="e#3189#3211#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,7 +99,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="singlePost.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="singlePost.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/frontend/singlePost.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -197,10 +198,10 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Frontend/FrontendController.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/layouts/app1.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/layouts/app2.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/frontend/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/singleEvent.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/singlePost.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend/index.blade.php" />
       </list>
     </option>
   </component>
@@ -538,18 +539,18 @@
       <workItem from="1552129283614" duration="5933000" />
       <workItem from="1552351328029" duration="815000" />
       <workItem from="1554014691831" duration="14418000" />
-      <workItem from="1554030282040" duration="6861000" />
+      <workItem from="1554030282040" duration="7540000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153506000" />
+    <option name="totallyTimeSpent" value="154185000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="784" y="0" width="1143" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08125577" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33150986" sideWeight="0.5088889" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -940,20 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="80" column="108" lean-forward="false" selection-start-line="80" selection-start-column="108" selection-end-line="80" selection-end-column="108" />
-          <folding>
-            <element signature="e#357#390#0#HTML" expanded="true" />
-            <element signature="e#438#459#0#HTML" expanded="true" />
-            <element signature="e#2029#2072#0#HTML" expanded="true" />
-            <element signature="e#2224#2248#0#HTML" expanded="true" />
-            <element signature="e#2440#2473#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/frontend/singleEvent.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -967,6 +954,22 @@
         <state relative-caret-position="391">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="80" column="128" lean-forward="false" selection-start-line="80" selection-start-column="128" selection-end-line="80" selection-end-column="128" />
+          <folding>
+            <element signature="e#357#390#0#HTML" expanded="true" />
+            <element signature="e#438#459#0#HTML" expanded="true" />
+            <element signature="e#2029#2072#0#HTML" expanded="true" />
+            <element signature="e#2224#2248#0#HTML" expanded="true" />
+            <element signature="e#2440#2473#0#HTML" expanded="true" />
+            <element signature="e#3157#3178#0#HTML" expanded="true" />
+            <element signature="e#3189#3211#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
