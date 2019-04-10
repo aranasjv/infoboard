@@ -11,7 +11,7 @@
     <center><H1><p>{{$blog->name}}</H1> </p></center>
     <center> by {{$blog->owner->name}}</center>
     <hr>
-    <center><img class="img-responsive" src="{{ asset('storage/img/blog/' . $blog->featured_image) }}"  alt="Card image cap"></center>
+    <center><img class="img-responsive" src="{{ asset('storage/img/blog/' . $blog->featured_image) }}" width="600" height="400"   alt="Card image cap"></center>
     <hr>
     <p>{!! $blog->content !!}</p>
     <hr>
