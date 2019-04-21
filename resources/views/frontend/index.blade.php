@@ -23,8 +23,9 @@
                         <p><h5>
                             To receive push notification of the latest information and view the information on your android phones.<br>
                             Download the Android Application for this Information MultiMediaboard on:<br>
-                            “https://github.com/aranasjv/CpE4---Multimedia Board-Android
-                            App/blob/master/CpE-4.apk"
+                            “https://github.com/aranasjv/CpE4---Multimedia Board-AndroidApp/blob/master/CpE-4.apk" or <br>
+                                <center>scan QR code:</center>
+                                <center><img class="img-responsive" src="{{ asset('storage/qr.JPG' )}}" width="200" height="100" alt="Card image cap"></center>
                         </h5></p>
 
                             <H5 id="announcement">*compatible with android phone with Android version 4 and above*</H5>
