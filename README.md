@@ -1,3 +1,9 @@
+This project is for the web application of our design Project Web-Based Multimedia Information Dispplay using raspberry pi with Mobile appication notication
+
+
+This web application use laravel 5.7 and Google firebase Api.
+
+This system also uses:
 # laravel-adminpanel
 [![GitHub license](https://img.shields.io/github/license/viralsolani/laravel-adminpanel.svg?style=plastic)](https://github.com/viralsolani/laravel-adminpanel/blob/master/LICENSE.txt)
 [![GitHub stars](https://img.shields.io/github/stars/viralsolani/laravel-adminpanel.svg?style=plastic)](https://github.com/viralsolani/laravel-adminpanel/stargazers)
